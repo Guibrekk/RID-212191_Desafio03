@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerenciador de tarefas DNC</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h2>Board de tarefas</h2>
+        <div class="inputs-container">
+          <input
+            class="input-tarefa"
+            type="text"
+            placeholder="Nome da tarefa:"
+          />
+
+          <select name="etiquetas" class="select-etiqueta">
+            <option value="">Etiqueta:</option>
+            <option value="frontend">Frontend</option>
+            <option value="backend">Backend</option>
+            <option value="ux">Ux</option>
+          </select>
+
+          <input class="input-data" type="date" placeholder="Etiqueta" />
+          <button class="botao-adicionar">+</button>
+        </div>
+      </header>
+
+      <ul class="lista-tarefas"></ul>
+
+      <footer>
+        <p class="numero-tarefa">1 tarefa concluida</p>
+        <button class="botao-deletar-todas">Deletar tarefas concluidas</button>
+      </footer>
+    </main>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
